@@ -221,7 +221,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (deci) {
-                    //do nothing or you can show the error
                 } else {
                     edittext1.setText(edittext1.getText() + ".");
                     deci = true;
@@ -242,9 +241,7 @@ public class MainActivity extends AppCompatActivity {
         btnSquareRoot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edittext1.setText("");
-                in1 = 0.0;
-                i2 = 0.0;
+                edittext1.setText(Math.sqrt(in1) + "");
             }
         });
     }
