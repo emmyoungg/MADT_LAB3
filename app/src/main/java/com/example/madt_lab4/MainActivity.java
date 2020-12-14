@@ -181,28 +181,31 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (Add) {
-
-                    edittext1.setText(in1 + i2 + "");
+                    String result = Calculator.add(in1, i2) + "";
+                    edittext1.setText(result);
                     Add = false;
                 }
 
                 if (Sub) {
-
-                    edittext1.setText(in1 - i2 + "");
+                    String result = Calculator.sub(in1, i2) + "";
+                    edittext1.setText(result);
                     Sub = false;
                 }
 
                 if (Multiply) {
-                    edittext1.setText(in1 * i2 + "");
+                    String result = Calculator.mult(in1, i2) + "";
+                    edittext1.setText(result);
                     Multiply = false;
                 }
 
                 if (Divide) {
-                    edittext1.setText(in1 / i2 + "");
+                    String result = Calculator.div(in1, i2) + "";
+                    edittext1.setText(result);
                     Divide = false;
                 }
                 if (Remainder) {
-                    edittext1.setText(in1 % i2 + "");
+                    String result = Calculator.rem(in1, i2) + "";
+                    edittext1.setText(result);
                     Remainder = false;
                 }
             }
